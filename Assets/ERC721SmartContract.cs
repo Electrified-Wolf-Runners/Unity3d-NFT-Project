@@ -27,7 +27,6 @@ public class ERC721SmartContract : MonoBehaviour
     {
         StartCoroutine(ERC721BalanceOf());
     }
-
     public IEnumerator ERC721BalanceOf()
     {
         //Query request using our acccount and the contracts address (no parameters needed and default values)
@@ -38,6 +37,18 @@ public class ERC721SmartContract : MonoBehaviour
         var dtoResult = queryRequest.Result;
         Debug.Log(dtoResult.ReturnValue1);
 
+        var tokensOwned = dtoResult.ReturnValue1;
+        Debug.Log(tokensOwned);
+
+        Debug.Log("Getting token owner Indices...");
+
+        for(int i = 0; i < tokensOwned; i++)
+        {
+            StartCoroutine(getTokenOfOwnerByIndex(i));
+            // yield return null;
+        }
+
+        // Error handling
         // if (queryRequest.Exception != null)
         // {
         //     UnityEngine.Debug.Log(queryRequest.Exception.Message);
@@ -47,6 +58,15 @@ public class ERC721SmartContract : MonoBehaviour
         //     ResultBlockNumber.text = queryRequest.Result.Value.ToString();
         // }
 
+    }
+
+    public IEnumerator getTokenOfOwnerByIndex(int i)
+    {
+        var queryRequest = new QueryUnityRequest<TokenOfOwnerByIndexFunction, TokenOfOwnerByIndexOutputDTO>(url, account);
+        yield return queryRequest.Query(new TokenOfOwnerByIndexFunction(){Owner = account, Index = i}, contractAddress);
+
+        var dtoResult = queryRequest.Result;
+        Debug.Log(dtoResult.ReturnValue1);
     }
     void Update()
     {
