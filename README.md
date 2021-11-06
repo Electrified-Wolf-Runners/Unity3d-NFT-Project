@@ -26,4 +26,7 @@ This outputs the stat1 (here strength) of the first character that the player wa
 
 ![stat1](screenshots/stat1.png "stat1")
 
+# Resources
+- ![Pass a bytes-32 argument in Remix](https://ethereum.stackexchange.com/questions/107812/pass-a-bytes32-as-argument-in-remix)
+
 
