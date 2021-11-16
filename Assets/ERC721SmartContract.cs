@@ -17,8 +17,9 @@ public class ERC721SmartContract : MonoBehaviour
     private string url = "https://rinkeby.infura.io/v3/e0f9e0acea7f4e2a90edba953bbf1277";
     private string account = "0xbd53Ef09C8e5C31004d57E7D297f221C08560FF1";
     private string privateKey = "c566b17567c731f2889ac7fe772d00d4f66e25ca00ae00152cd99bbe4bd0a3c6";
-    private string contractAddress = "0x9Dcd1f7868A39A9C51545c88DAf5E7A2108F8820"; //MyHero contract on Rinkeby
+    private string contractAddress = "0x8B7995c357592Ee93FD88bA16e146E619FcCFCD0"; //MyHero contract on Rinkeby
     public BigInteger[] tokenids;
+    bool characters_loaded = false;
 
     // Use this for initialization
     void Start()
@@ -30,12 +31,29 @@ public class ERC721SmartContract : MonoBehaviour
     public void BalanceOfRequest()
     {
         StartCoroutine(ERC721BalanceOf());
+        characters_loaded = true;
     }
     
     public void Character0Request()
-    {
-        StartCoroutine(CallGetCharacterStats(tokenids[0]));
+    {   
+        if(characters_loaded)
+        {
+            Debug.Log("Token id: " + tokenids[0]);
+            StartCoroutine(CallGetCharacterStats(tokenids[0]));
+        }
+        Debug.Log("No character available");
     }
+
+    public void Character1Request()
+    {   
+        if(characters_loaded)
+        {
+            Debug.Log("Token id: " + tokenids[1]);
+            StartCoroutine(CallGetCharacterStats(tokenids[1]));
+        }
+        Debug.Log("No character available");
+    }
+
     public IEnumerator ERC721BalanceOf()
     {
         //Query request using our acccount and the contracts address (no parameters needed and default values)
@@ -61,7 +79,7 @@ public class ERC721SmartContract : MonoBehaviour
         
         for(int i = 0; i < tokensOwned; i++)
         {
-            Debug.Log(tokenids[i]);
+            Debug.Log("i: " + tokenids[i]);
         }
 
         // Debug.Log("Getting character stats...");
@@ -90,9 +108,7 @@ public class ERC721SmartContract : MonoBehaviour
 
         var dtoResult = queryRequest.Result;
         
-        Debug.Log("Inside");
-        
-        Debug.Log(dtoResult.ReturnValue1);
+        Debug.Log("Inside: " + dtoResult.ReturnValue1);
 
         tokenids[i] = dtoResult.ReturnValue1;
     }
@@ -100,16 +116,21 @@ public class ERC721SmartContract : MonoBehaviour
     //getCharacterStats
     public IEnumerator CallGetCharacterStats(BigInteger tokenid)
     {
+        Debug.Log("Getting Character with token id: " + tokenid);
         var queryRequest = new QueryUnityRequest<GetCharacterStatsFunction, GetCharacterStatsOutputDTO>(url, account);
         yield return queryRequest.Query(new GetCharacterStatsFunction(){TokenId = tokenid}, contractAddress);
 
         var dtoResult = queryRequest.Result;
 
-        var stat1 = dtoResult.ReturnValue1; 
+        var speed = dtoResult.ReturnValue1; 
+        var strength = dtoResult.ReturnValue2; 
+        var agility = dtoResult.ReturnValue3; 
+        var charisma = dtoResult.ReturnValue4; 
+        var power = dtoResult.ReturnValue5;
+        var intelligence = dtoResult.ReturnValue6; 
+        var name = dtoResult.ReturnValue7;
 
-        Debug.Log("Stat1: ");
-        Debug.Log(dtoResult.ReturnValue1);
-
+        Debug.Log("Speed: " + speed + "  Strength: " + strength + "  Agility: " + agility + "  Charisma: " + charisma + "  Power: " + power + "  Intelligence: " + intelligence);
     }
     void Update()
     {
