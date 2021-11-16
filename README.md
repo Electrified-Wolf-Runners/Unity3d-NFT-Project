@@ -5,26 +5,32 @@
 # Character Stats
 The Character NFT has the following stats
 
-![stats](screenshots/stats.png "stats")
+![stats](screenshots/newstats1.PNG "stats")
 
 
 # UI for ERC721 NFT Interaction
 This is the UI to interact with the smart contract and query data related 
 to the current wallet address
 
-![erc721](screenshots/erc721.png "erc721")
+![erc721](screenshots/newui.png "erc721")
  
 
-## ERC721 BalanceOf
-This gets the number of NFT characters owned by the player
-
-![balance](screenshots/balance.PNG "balance")
+## Load Characters
+This gets the number of NFT characters owned by the player and loads 
+the character stats into Unity.
 
 
 ## Get Character 0 
+This outputs all the stats of the first character that the player wallet address holds
+
+![char0](screenshots/char0.PNG "char0")
+
+
+## Get Character 1
 This outputs the stat1 (here strength) of the first character that the player wallet address holds
 
-![stat1](screenshots/stat1.png "stat1")
+![char1](screenshots/char1.PNG "char1")
+
 
 # Resources
 - [Pass a bytes-32 argument in Remix](https://ethereum.stackexchange.com/questions/107812/pass-a-bytes32-as-argument-in-remix)
