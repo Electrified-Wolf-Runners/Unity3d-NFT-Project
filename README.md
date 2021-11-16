@@ -27,7 +27,7 @@ This outputs all the stats of the first character that the player wallet address
 
 
 ## Get Character 1
-This outputs the stat1 (here strength) of the first character that the player wallet address holds
+This outputs all the stats of the second character that the player wallet address holds
 
 ![char1](screenshots/char1.PNG "char1")
 
