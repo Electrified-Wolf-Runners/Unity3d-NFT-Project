@@ -53,77 +53,77 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Contracts\TestDefinition.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\SimpleBarricade.cs" />
+    <Compile Include="Assets\Scripts\UI\HighscoreUI.cs" />
     <Compile Include="Assets\Scripts\GetLatestBlockCoroutine.cs" />
     <Compile Include="Assets\Scripts\EtherTransferCoroutinesUnityWebRequest.cs" />
     <Compile Include="Assets\Scripts\TokenDeployAndSendCoroutinesUnityWebRequest.cs" />
-    <Compile Include="Assets\Scripts\ERC721SmartContract.cs" />
-    <Compile Include="Assets\Scripts\GetLatestBlockVanillaNethereum.cs" />
+    <Compile Include="Assets\Scripts\GameManager\LoadoutState.cs" />
+    <Compile Include="Assets\Scripts\GameManager\GameOverState.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\ShopCharacterList.cs" />
+    <Compile Include="Assets\Scripts\GameManager\Modifier.cs" />
+    <Compile Include="Assets\Scripts\Tracks\TrackManager.cs" />
+    <Compile Include="Assets\Scripts\UI\Settings\DataDeleteConfirmation.cs" />
+    <Compile Include="Assets\Scripts\UI\Leaderboard.cs" />
+    <Compile Include="Assets\Scripts\Characters\CharacterInputController.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\ShopUI.cs" />
+    <Compile Include="Assets\Scripts\UI\AdsForMission.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\PatrollingObstacle.cs" />
+    <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
+    <Compile Include="Assets\Scripts\Sounds\MusicPlayer.cs" />
+    <Compile Include="Assets\Scripts\WorldCurver.cs" />
+    <Compile Include="Assets\Scripts\Consumable\ConsumableDatabase.cs" />
+    <Compile Include="Assets\Scripts\Missions\Missions.cs" />
+    <Compile Include="Assets\Scripts\GameManager\TutorialState.cs" />
     <Compile Include="Assets\Contracts\NftDefinition.cs" />
-    <Compile Include="Assets\Scripts\ChangeTextInWebGL.cs" />
+    <Compile Include="Assets\Scripts\Consumable\Types\Invincibility.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\UI\LicenceDisplayer.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\ShopItemListItem.cs" />
     <Compile Include="Assets\Scripts\ERC20SmartContract.cs" />
     <Compile Include="Assets\Scripts\BalanceOfVanilla.cs" />
-    <Compile Include="Assets\Scripts\DisableInWebGL.cs" />
-    <Compile Include="Assets\Scripts\UI\PowerupIcon.cs" />
-    <Compile Include="Assets\Scripts\UI\LicenceDisplayer.cs" />
-    <Compile Include="Assets\Scripts\LevelLoader.cs" />
-    <Compile Include="Assets\Scripts\UI\Shop\ShopList.cs" />
-    <Compile Include="Assets\Scripts\Characters\CharacterCollider.cs" />
-    <Compile Include="Assets\Scripts\UI\Shop\ShopItemListItem.cs" />
-    <Compile Include="Assets\Scripts\Consumable\Types\Score2Multiplier.cs" />
-    <Compile Include="Assets\Scripts\GameManager\LoadoutState.cs" />
-    <Compile Include="Assets\Scripts\Obstacles\Obstacle.cs" />
-    <Compile Include="Assets\Scripts\UI\MissionEntry.cs" />
-    <Compile Include="Assets\Scripts\UI\Shop\IAPHandler.cs" />
-    <Compile Include="Assets\Scripts\Obstacles\PatrollingObstacle.cs" />
     <Compile Include="Assets\Scripts\Characters\CharacterDatabase.cs" />
-    <Compile Include="Assets\Scripts\UI\MissionUI.cs" />
-    <Compile Include="Assets\Scripts\UI\Shop\ShopUI.cs" />
-    <Compile Include="Assets\Scripts\Consumable\Types\CoinMagnet.cs" />
-    <Compile Include="Assets\Scripts\UI\Leaderboard.cs" />
-    <Compile Include="Assets\Scripts\UI\HighscoreUI.cs" />
-    <Compile Include="Assets\Scripts\Pooler.cs" />
-    <Compile Include="Assets\Scripts\Obstacles\Missile.cs" />
-    <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
+    <Compile Include="Assets\Scripts\OpenURL.cs" />
+    <Compile Include="Assets\Scripts\Themes\ThemeData.cs" />
+    <Compile Include="Assets\Scripts\Sounds\AssignOutputChannel.cs" />
+    <Compile Include="Assets\Contracts\TestDefinition.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\ShopAccessoriesList.cs" />
     <Compile Include="Assets\Scripts\Consumable\Consumable.cs" />
-    <Compile Include="Assets\Scripts\UI\AdsForMission.cs" />
-    <Compile Include="Assets\Scripts\Consumable\ConsumableDatabase.cs" />
+    <Compile Include="Assets\Scripts\Characters\RandomAnimation.cs" />
+    <Compile Include="Assets\Scripts\Consumable\ConsumableIcon.cs" />
+    <Compile Include="Assets\Scripts\UI\StartButton.cs" />
+    <Compile Include="Assets\Scripts\Consumable\Types\ExtraLife.cs" />
+    <Compile Include="Assets\Scripts\Consumable\Types\Score2Multiplier.cs" />
+    <Compile Include="Assets\Scripts\Consumable\Types\CoinMagnet.cs" />
     <Compile Include="Assets\Scripts\Sounds\CountdownSound.cs" />
+    <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Scripts\UI\PowerupIcon.cs" />
     <Compile Include="Assets\Scripts\CoroutineHandler.cs" />
-    <Compile Include="Assets\Scripts\Consumable\Types\Invincibility.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\ShopList.cs" />
+    <Compile Include="Assets\Scripts\ERC721SmartContract.cs" />
+    <Compile Include="Assets\Scripts\GetLatestBlockVanillaNethereum.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\Missile.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
-    <Compile Include="Assets\Scripts\Sounds\MusicPlayer.cs" />
-    <Compile Include="Assets\Scripts\GameManager\GameOverState.cs" />
+    <Compile Include="Assets\Scripts\Helpers.cs" />
+    <Compile Include="Assets\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\Pooler.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\ShopThemeList.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Characters\RandomAnimation.cs" />
-    <Compile Include="Assets\Scripts\Tracks\TrackSegment.cs" />
-    <Compile Include="Assets\Scripts\Consumable\ConsumableIcon.cs" />
-    <Compile Include="Assets\Scripts\OpenURL.cs" />
-    <Compile Include="Assets\Scripts\Characters\RestartRunning.cs" />
-    <Compile Include="Assets\Scripts\Themes\ThemeData.cs" />
-    <Compile Include="Assets\Scripts\GameManager\Modifier.cs" />
-    <Compile Include="Assets\Scripts\Characters\CharacterAccessories.cs" />
-    <Compile Include="Assets\Scripts\Helpers.cs" />
-    <Compile Include="Assets\Scripts\Themes\ThemeDatabase.cs" />
-    <Compile Include="Assets\Scripts\Characters\CharacterInputController.cs" />
-    <Compile Include="Assets\Scripts\Missions\Missions.cs" />
-    <Compile Include="Assets\Scripts\UI\Settings\SettingPopup.cs" />
-    <Compile Include="Assets\Scripts\Sounds\AssignOutputChannel.cs" />
-    <Compile Include="Assets\Scripts\Coin.cs" />
-    <Compile Include="Assets\Scripts\Obstacles\SimpleBarricade.cs" />
-    <Compile Include="Assets\Scripts\Tracks\TrackManager.cs" />
-    <Compile Include="Assets\Scripts\GameManager\TutorialState.cs" />
-    <Compile Include="Assets\Scripts\UI\Shop\ShopAccessoriesList.cs" />
-    <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
-    <Compile Include="Assets\Scripts\UI\StartButton.cs" />
-    <Compile Include="Assets\Scripts\UI\Settings\DataDeleteConfirmation.cs" />
-    <Compile Include="Assets\Scripts\UI\Shop\ShopCharacterList.cs" />
     <Compile Include="Assets\Scripts\Obstacles\AllLaneObstacle.cs" />
-    <Compile Include="Assets\Scripts\WorldCurver.cs" />
+    <Compile Include="Assets\Scripts\ChangeTextInWebGL.cs" />
+    <Compile Include="Assets\Scripts\UI\MissionEntry.cs" />
+    <Compile Include="Assets\Scripts\Themes\ThemeDatabase.cs" />
     <Compile Include="Assets\Scripts\Characters\Character.cs" />
-    <Compile Include="Assets\Scripts\Consumable\Types\ExtraLife.cs" />
+    <Compile Include="Assets\Scripts\Characters\CharacterCollider.cs" />
+    <Compile Include="Assets\Scripts\Characters\RestartRunning.cs" />
+    <Compile Include="Assets\Scripts\Coin.cs" />
+    <Compile Include="Assets\Scripts\UI\MissionUI.cs" />
+    <Compile Include="Assets\Scripts\Tracks\TrackSegment.cs" />
+    <Compile Include="Assets\Scripts\Characters\CharacterAccessories.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\ShopItemList.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\IAPHandler.cs" />
+    <Compile Include="Assets\Scripts\DisableInWebGL.cs" />
+    <Compile Include="Assets\Scripts\UI\Settings\SettingPopup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\CurvedUnlitCloud.shader" />
@@ -392,11 +392,11 @@
     <Reference Include="Nethereum.Parity">
       <HintPath>Assets\Plugins\Nethereum.Parity.dll</HintPath>
     </Reference>
-    <Reference Include="BouncyCastle.Crypto">
-      <HintPath>Assets\Plugins\BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
     <Reference Include="Nethereum.Signer">
       <HintPath>Assets\Plugins\Nethereum.Signer.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>Assets\Plugins\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Nethereum.StandardTokenEIP20">
       <HintPath>Assets\Plugins\Nethereum.StandardTokenEIP20.dll</HintPath>
@@ -830,14 +830,23 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CacheServer">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -845,8 +854,20 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -857,6 +878,9 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Analytics">
       <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
     </Reference>
@@ -866,14 +890,26 @@
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Addressables">
-      <HintPath>Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ResourceManager">
-      <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+    <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
       <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
@@ -881,47 +917,11 @@
     <Reference Include="Unity.Addressables.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.CacheServer">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.CacheServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Monetization">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
